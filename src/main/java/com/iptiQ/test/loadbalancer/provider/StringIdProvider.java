@@ -24,7 +24,6 @@ public class StringIdProvider implements Provider {
       Thread.sleep(clientRequestProcessingDelayMS);
     } catch (InterruptedException exception) {
       System.out.printf("Thread[%s] is interrupted%n", Thread.currentThread().getName());
-      exception.printStackTrace();
     }
 
     return new SimpleResponse(internalId);
