@@ -26,6 +26,18 @@ public class LoadBalancerImplCapacityTracking implements LoadBalancer {
   private final LoadBalancingStrategy loadBalancingStrategy;
   private final Map<Provider, Semaphore> usageStatistics;
 
+  //Visible for testing
+  LoadBalancerImplCapacityTracking(
+      ProviderRegistry providerRegistry,
+      LoadBalancingStrategy loadBalancingStrategy,
+      Map<Provider, Semaphore> usageStatistics,
+      int capacityLimit) {
+    this.capacityLimit = capacityLimit;
+    this.providerRegistry = providerRegistry;
+    this.loadBalancingStrategy = loadBalancingStrategy;
+    this.usageStatistics = usageStatistics;
+  }
+
   public LoadBalancerImplCapacityTracking(
       ProviderRegistry providerRegistry,
       LoadBalancingStrategy loadBalancingStrategy,

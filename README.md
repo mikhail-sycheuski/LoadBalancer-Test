@@ -63,6 +63,11 @@ This implementation is based on ny understanding of the task requirements and fo
 * List of registered providers is static and dynamic registration/deregistration of providers is not possible
 * Application should be built following main good design principles and practises
 
+I've covered some of the major components with Unit tests but not all (because there is no enough time).
+I've tested this app with multiple parameters, 
+however I do not exclude the fact that there may be bugs because concurrency is involved,
+which requires more wider concurrency integration testing in order to cover all edge cases.
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -75,7 +80,12 @@ To get a local copy up and running follow these simple example steps.
 
 In order to build the application please run in console being in the project root directory:
 ```sh
-gradlew clean build
+./gradlew clean build
+```
+
+In order to execute unit tests please run in console being in the project root directory:
+```sh
+./gradlew test
 ```
 
 In order to run application please use standard java command.

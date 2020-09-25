@@ -12,7 +12,16 @@ import com.iptiQ.test.loadbalancer.provider.Provider;
 public class LoadBalancingStrategyImplRecursiveRoundRobin implements LoadBalancingStrategy {
 
   private ProviderRegistry providerRegistry;
-  private Iterator<ProviderMetadata> roundRobinIterator;
+  Iterator<ProviderMetadata> roundRobinIterator; // visible for testing
+
+  /*
+   Testing constructor
+  */
+  LoadBalancingStrategyImplRecursiveRoundRobin(
+      ProviderRegistry providerRegistry, Iterator<ProviderMetadata> roundRobinIterator) {
+    this.providerRegistry = providerRegistry;
+    this.roundRobinIterator = roundRobinIterator;
+  }
 
   public LoadBalancingStrategyImplRecursiveRoundRobin(ProviderRegistry providerRegistry) {
     this.providerRegistry = providerRegistry;
