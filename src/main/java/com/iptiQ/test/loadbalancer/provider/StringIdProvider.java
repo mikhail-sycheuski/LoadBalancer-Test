@@ -29,4 +29,10 @@ public class StringIdProvider implements Provider {
 
     return new SimpleResponse(internalId);
   }
+
+  @Override
+  public HealthCheckStatus healthCheck() {
+    int randomStatusIndicator = new Random().nextInt(1000);
+    return randomStatusIndicator >= 300 ? HealthCheckStatus.UP : HealthCheckStatus.DOWN;
+  }
 }
