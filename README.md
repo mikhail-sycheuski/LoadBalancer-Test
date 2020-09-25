@@ -3,12 +3,13 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img src="docs/images/baby-image.png" alt="Logo" width="80" height="80">
+  <img src="docs/images/baby-image.png" alt="Logo">
 
   <h3 align="center">Childish LoadBalancer</h3>
-
   <p align="center">
-    Implementation of the test task for iptiQ!
+    <b>Implementation of the test task for iptiQ!</b>
+    <br />
+    <br />
     <br />
   </p> 
 </p>
