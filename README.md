@@ -75,6 +75,7 @@ To run this application you need no more than just apply gradle sync, compile ja
 
 ### Prerequisites
 
+Please ensure you have Lombock annotation processing configured: https://www.baeldung.com/lombok-ide .
 In order to build the application please run following instruction in console being in the project root directory:
 ```sh
 ./gradlew clean build
