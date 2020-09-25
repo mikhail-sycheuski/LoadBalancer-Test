@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <img src="docs/images/baby-image.png" alt="Logo">
+  <img src="docs/images/baby-image.png" alt="Logo" width="50%" height="50%">
 
   <h3 align="center">Childish LoadBalancer</h3>
   <p align="center">
