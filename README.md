@@ -56,14 +56,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This implementation is based on ny understanding of the task requirements and following assumptions:
+This implementation is based on my understanding of the task requirements and following assumptions:
 * No libraries and frameworks should be used
-* The application should have possibility to run a showcase
+* The application should have possibility to run as a showcase
 * All concurrency scenarios should be covered
 * List of registered providers is static and dynamic registration/deregistration of providers is not possible
 * Application should be built following main good design principles and practises
 
-I've covered some of the major components with Unit tests but not all (because there is no enough time).
+I've covered some of the major components with Unit tests but not all (because there is not enough time).
 I've tested this app with multiple parameters, 
 however I do not exclude the fact that there may be bugs because concurrency is involved,
 which requires more wider concurrency integration testing in order to cover all edge cases.
@@ -71,19 +71,16 @@ which requires more wider concurrency integration testing in order to cover all 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To run this application you need no more than just apply gradle sync compile java app and run i.
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To run this application you need no more than just apply gradle sync, compile java app and run it.
 
 ### Prerequisites
 
-In order to build the application please run in console being in the project root directory:
+In order to build the application please run following instruction in console being in the project root directory:
 ```sh
 ./gradlew clean build
 ```
 
-In order to execute unit tests please run in console being in the project root directory:
+In order to execute unit tests please run following instruction in console being in the project root directory:
 ```sh
 ./gradlew test
 ```
