@@ -1,28 +1,34 @@
 plugins {
-    id 'java'
-    id 'idea'
+  id 'java'
+  id 'idea'
 }
 
-group 'org.example'
+group 'com.iptiQ.test'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = JavaVersion.VERSION_11
 targetCompatibility = JavaVersion.VERSION_11
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 test {
-    useJUnitPlatform()
-    testLogging {
-        events "passed", "skipped", "failed"
-    }
+  useJUnitPlatform()
+  testLogging {
+    events "passed", "skipped", "failed"
+  }
 }
 
 dependencies {
-    testImplementation('org.junit.jupiter:junit-jupiter:5.7.0')
-    testImplementation('org.mockito:mockito-core:3.5.11')
-    testImplementation('org.mockito:mockito-junit-jupiter:3.5.11')
-    testImplementation('org.hamcrest:hamcrest:2.2')
+  compileOnly 'org.projectlombok:lombok:1.18.12'
+  annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+  testCompileOnly 'org.projectlombok:lombok:1.18.12'
+  testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+  testImplementation('org.junit.jupiter:junit-jupiter:5.7.0')
+  testImplementation('org.mockito:mockito-core:3.5.11')
+  testImplementation('org.mockito:mockito-junit-jupiter:3.5.11')
+  testImplementation('org.hamcrest:hamcrest:2.2')
 }
