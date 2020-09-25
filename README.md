@@ -3,9 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/mikhail-sycheuski/iptiQ-LoadBalancer-Test/blob/master/docs/images/baby-image.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  <img src="docs/images/baby-image.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">Childish LoadBalancer</h3>
 
