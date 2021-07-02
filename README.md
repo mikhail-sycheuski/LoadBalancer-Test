@@ -1,4 +1,4 @@
-# iptiQ-LoadBalancer-Test
+# LoadBalancer-Test
 
 <!-- PROJECT LOGO -->
 <br />
@@ -7,7 +7,7 @@
 
   <h3 align="center">Childish LoadBalancer</h3>
   <p align="center">
-    <b>Implementation of the test task for iptiQ!</b>
+    <b>Implementation of the test task!</b>
     <br />
     <br />
     <br />
